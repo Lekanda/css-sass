@@ -15,7 +15,9 @@ a{
     max-width: 1200px;
     margin: 0 auto;
 }
-
+img{
+    max-width: 100%; /* Se adapta al tamaño del div contenedor */
+}
 
 
 /* Header y Navegacion */
@@ -43,14 +45,12 @@ a{
     height: 550px;
 }
 
-/** BOX MOdel **/
-.sobre-nosotros{
-    background-color: red;
-    width: 200px;
-    padding: 25px;
+/* Categorias */
+.listado-categorias{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
 }
-
-/* Display inline-block */
 
 
 
