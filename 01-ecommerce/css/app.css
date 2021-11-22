@@ -14,9 +14,6 @@ a{
 
 
 
-
-
-
 /* Header y Navegacion */
 .nombre-sitio{
     margin-top: 50px;
@@ -31,6 +28,12 @@ a{
     justify-content: center;
     padding: 20px 0;
     border-top: 2px solid #e1e1e1;
+}
+.hero{
+    background-image: url(../img/principal.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
 }
 
 /** BOX MOdel **/
