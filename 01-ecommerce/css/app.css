@@ -31,6 +31,9 @@ a{
     border-top: 1px solid #e1e1e1;
 }
 .nav-principal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px 0;
 }
 .hero{
