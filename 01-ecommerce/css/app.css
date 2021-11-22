@@ -11,6 +11,10 @@ a{
     text-decoration: none;
     color: #000;
 }
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
 
 
 
@@ -23,11 +27,11 @@ a{
 .nombre-sitio span{
     color: #037bc0;
 }
+.contenedor-navegacion{
+    border-top: 1px solid #e1e1e1;
+}
 .nav-principal{
-    display: flex;
-    justify-content: center;
     padding: 20px 0;
-    border-top: 2px solid #e1e1e1;
 }
 .hero{
     background-image: url(../img/principal.jpg);
