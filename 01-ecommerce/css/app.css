@@ -15,8 +15,11 @@ a{
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* Ajustes generales para un img */
 img{
     max-width: 100%; /* Se adapta al tamaño del div contenedor */
+    display: block; /* La imagen da un poco de margen hacia abajo*/
 }
 
 
@@ -46,6 +49,20 @@ img{
 }
 
 /* Categorias */
+.categorias h2{
+    text-align: center;
+}
+.categoria a{
+    text-align: center;
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+}
+.categoria a:hover{
+    background-color: #037bc0;
+    color: #fff;
+    border-bottom-right-radius: 40px;
+}
 .listado-categorias{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
