@@ -91,6 +91,16 @@ img{
     gap: 2rem;
 }
 
+/* Nosotros */
+.sobre-nosotros{
+    background-image: linear-gradient(to right, transparent 50%, #037bc0 50%, #037bc0 100%), url(../img/nosotros.jpg);
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: 100%, 120rem;
+    padding: 10rem 0;
+
+}
+
 
 
 
