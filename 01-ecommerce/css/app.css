@@ -100,7 +100,15 @@ img{
     padding: 10rem 0;
 
 }
+.sobre-nosotros-grid{
+    display: flex;
+    justify-content: flex-end;
+}
+.texto-nosotros{
+    flex-basis: 46%;
+    color: #fff;
 
+}
 
 
 
