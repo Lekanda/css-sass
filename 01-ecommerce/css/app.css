@@ -134,11 +134,25 @@ img{
     gap: 2rem;
 }
 .producto:nth-child(1){
-    grid-column: 1/7;
+    grid-column-start: 1;
+    grid-column-end: 7;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(1) img{
+    height: 44.2rem;
+    width: 100%;
+    object-fit: cover;
 }
 .producto:nth-child(2){
     grid-column-start: 1;
     grid-column-end: 4;
+}
+.producto:nth-child(2) img,
+.producto:nth-child(3) img{
+    height: 30rem;
+    width: 100%;
+    object-fit: cover;
 }
 .producto:nth-child(3){
     grid-column-start: 4;
