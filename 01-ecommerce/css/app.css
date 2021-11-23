@@ -233,7 +233,7 @@ img{
 }
 
 
-/* Blog */
+/* Blog y Entrada*/
 .contenedor-blog{
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -281,3 +281,6 @@ aside ol{
     width: 40rem;
     object-fit: cover;
 }
+
+
+/* Contacto */
