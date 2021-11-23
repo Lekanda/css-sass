@@ -251,12 +251,16 @@ img{
     justify-content: space-between;
 }
 .entrada-meta p{
-    font-size: 20px;
+    font-size: 12px;
     font-weight: 700;
 }
-.entrada-meta p span{
+.entrada-meta span{
     color: #037bc0;
-    font-size: 25px;
+    font-size: 16px;
+}
+.contenido-entrada-blog {
+    width: 60rem;
+    margin: 0 auto;
 }
 aside ol{
     list-style-type: georgian;
