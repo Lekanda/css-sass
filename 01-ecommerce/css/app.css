@@ -191,5 +191,26 @@ img{
     font-weight: 900;
 }
 
-
-
+/* Footer */
+.site-footer{
+    margin-top: 5rem;
+    border-top: 1.5px solid #e1e1e1;
+    padding-top: 5rem;
+}
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-bottom: 5rem;
+}
+.grid-footer h3{
+   margin: 0;
+}
+.footer-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem
+}
+.copyright{
+    text-align: center;
+    font-weight: 900;
+}
