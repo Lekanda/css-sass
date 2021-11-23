@@ -57,8 +57,6 @@ img{
 }
 
 
-
-
 /* Header y Navegacion */
 .nombre-sitio{
     margin-top: 5rem;
@@ -130,6 +128,36 @@ img{
 .contenido-principal{
     padding-top: 5rem;
 }
+.listado-productos{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 2rem;
+}
+.producto:nth-child(1){
+    grid-column: 1/7;
+}
+.producto:nth-child(2){
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.producto:nth-child(3){
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+.producto:nth-child(4){
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.producto:nth-child(5){
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+.producto:nth-child(6){
+    grid-column-start: 5;
+    grid-column-end: 7;
+}
+
+
 .producto{
     background-color: #037bc0;
 }
