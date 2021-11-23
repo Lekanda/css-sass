@@ -59,6 +59,7 @@ img{
 }
 .btn:hover{
     background-color: #769c02;
+    cursor: pointer;
 }
 
 
