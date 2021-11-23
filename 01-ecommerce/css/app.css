@@ -55,6 +55,7 @@ img{
     padding: 1rem;
     transition: background-color .3s ease-out;
     text-align: center;
+    border: none;
 }
 .btn:hover{
     background-color: #769c02;
@@ -195,29 +196,6 @@ img{
     font-weight: 900;
 }
 
-/* Footer */
-.site-footer{
-    margin-top: 5rem;
-    border-top: 1.5px solid #e1e1e1;
-    padding-top: 5rem;
-}
-.grid-footer{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    padding-bottom: 5rem;
-}
-.grid-footer h3{
-   margin: 0;
-}
-.footer-menu{
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 2rem
-}
-.copyright{
-    text-align: center;
-    font-weight: 900;
-}
 
 /* Nosotros.html */
 .contenido-nosotros{
@@ -284,3 +262,60 @@ aside ol{
 
 
 /* Contacto */
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+.formulario fieldset {
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+.formulario legend {
+    background-color: #005485;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 4rem;
+}
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+.campo label {
+    flex-basis: 10rem;
+} 
+.campo input:not([type="radio"]),
+.campo textarea,
+.campo select  {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
+
+
+/* Footer */
+.site-footer{
+    margin-top: 5rem;
+    border-top: 1.5px solid #e1e1e1;
+    padding-top: 5rem;
+}
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-bottom: 5rem;
+}
+.grid-footer h3{
+   margin: 0;
+}
+.footer-menu{
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 2rem
+}
+.copyright{
+    text-align: center;
+    font-weight: 900;
+}
