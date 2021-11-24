@@ -1,0 +1,65 @@
+:root {
+    --azul: #0071b7;
+    --blanco: #FFF;
+    --naranja: #ff4f1e;
+}
+html {
+    font-size: 62.5%; /** 1REM = 10pX **/
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    background-color: var(--azul);
+    font-family:  'Lato', sans-serif;
+    font-size: 1.6rem;
+}
+
+h1, h2 {
+    color: var(--blanco);
+    text-align: center;
+    margin: 5rem 0;
+    padding: 1rem;
+}
+.caja-curso {
+    background-color: var(--naranja);
+    text-align: center;
+    color: var(--blanco);
+    padding: 5rem;
+
+}
+.caja-curso h1 {
+    margin: 0;
+}
+.caja-curso p {
+    font-size: 2.4rem;
+}
+.caja-curso a {
+    font-size: 2.4rem;
+    padding: 2rem;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--blanco);
+    padding: 0;
+}
+.contenedor {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.box {
+    background-color: var(--naranja);
+    color: var(--blanco);
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    border: 1rem solid #bb2b03;
+}
+
+.codigo {
+    background-color: var(--blanco);
+    padding: 5rem;
+}

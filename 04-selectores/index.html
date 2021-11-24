@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectores CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="caja-curso">
+        <h1>CSS La Guía Completa - Flexbox, CSS Grid, SASS +20 proyectos</h1>
+        <p>- Juan De la torre @codigoconjuan</p>
+        <a target="blank" rel="nofollow noopener noreferrer"  href="https://codigoconjuan.com/">Vísita mi sitio Codigo Con Juan</a>
+    </div>
+
+    <div class="contenedor">
+
+        <h2>1.- Selector de Etiqueta</h2>
+
+        <div class="codigo">
+            <p>Primer Texto</p>
+            <p>Segundo Texto</p>
+            <p>3er Texto</p>
+        </div>
+
+
+        <h2>2.- Selector de Clase</h2>
+        <div class="codigo">
+            <p class="primer-parrafo">Primer Texto</p>
+            <p>Segundo Texto</p>
+            <p>3er Texto</p>
+        </div>
+
+        <h2>3.- Selector de 2 Clases</h2>
+
+        <div class="codigo">
+            <p class="texto">Primer Texto</p>
+            <p class="texto azul mayusculas">Segundo Texto</p>
+            <p class="texto">3er Texto</p>
+        </div>
+
+        <h2>4.- Selector de Clases Anidadas</h2>
+
+        <div class="codigo">
+            <header class="header">
+                <div class="descripcion">Descripción sitio web</div>
+            </header>
+            <div class="descripcion">Segunda Descripción</div>
+        </div>
+
+        <h2>5.- Selector de ID</h2>
+
+        <div class="codigo">
+            <p id="encabezado" class="texto">Primer Texto</p>
+            <p class="texto">Segundo Texto</p>
+            <p class="texto">3er Texto</p>
+        </div>
+
+
+        <h2>6.- Selector de Etiqueta y Clase</h2>
+
+        <div class="codigo">
+            <p class="texto">Primer Texto</p>
+            <p class="texto">Segundo Texto</p>
+            <p class="texto">3er Texto</p>
+
+            <div class="texto">
+                Oferta Especial!
+            </div>
+        </div>
+
+        <h2>7.- 2 Elementos </h2>
+
+        <div class="codigo">
+            <p class="texto">Primer Texto</p>
+            <p class="texto">Segundo Texto</p>
+            <p class="texto">3er Texto</p>
+
+            <div class="oferta">
+                Oferta Especial!
+            </div>
+        </div>
+
+        <h2>8.- Primer Nivel de Hijos </h2>
+        <div class="codigo">
+            <div class="admin">
+                <div>
+                    <p>Has Iniciado sesión como: Admin</p>
+                    <div>
+                        <p>Cerrar Sesión aquí</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <h2>9.- Primer Elemento Después</h2>
+
+        <div class="codigo">
+            <div class="admin">
+                <div>
+                    <p>Cerrar Sesión aquí</p>
+                </div>
+                <p>Has Iniciado sesión como: Admin</p>
+            </div>
+        </div>
+
+
+        <h2>10.- Atributo </h2>
+        <div class="codigo">
+            <nav>
+                <a href="http://www.google.com">Google</a>
+                <a href="tienda.html">Tienda</a>
+            </nav>
+
+            <input type="tel" id="telefono"  value="1212" />
+        </div>
+
+
+        <h2>11.- Primer Hijo de una lista</h2>
+
+        <div class="codigo">
+            <p>Lista de Compras</p>
+            <ul>
+                <li>Compra 1</li>
+                <li>Compra 2</li>
+                <li>Compra 3</li>
+                <li>Compra 4</li>
+                <li>Compra 5</li>
+            </ul>
+        </div>
+
+        <h2>12.- último Hijo de una lista </h2>
+        <div class="codigo">
+            <p>Lista de Compras</p>
+            <ul>
+                <li>Compra 1</li>
+                <li>Compra 2</li>
+                <li>Compra 3</li>
+                <li>Compra 4</li>
+                <li>Compra 5</li>
+            </ul>
+        </div>
+
+
+
+        <h2>13.- Elemento en Especifico </h2>
+        <div class="codigo">
+            <p>Lista de Compras</p>
+            <ul>
+                <li>Compra 1</li>
+                <li>Compra 2</li>
+                <li>Compra 3</li>
+                <li>Compra 4</li>
+                <li>Compra 5</li>
+            </ul>
+        </div>
+
+        <h2>14.- Seleccionar todos los elementos excepto uno o unos </h2>
+        <div class="codigo">
+            <div class="elementos">
+                <p class="texto">Texto 1</p>
+                <p class="heading">Texto 2</p>
+                <p class="descripcion">Texto 3</p>
+                <p class="oferta">Texto 4</p>
+            </div>
+        </div>
+
+        <h2>15.- Primer Letra y Linea</h2>
+        <div class="codigo">
+                <p class="primer-letra"> Primer parrafo de una noticia</p>
+                <p class="primer-letra"> Primer parrafo de una noticia</p>
+
+                <p class="primer-linea">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi, quis repellat quae laborum libero quod nemo placeat alias inventore sit optio dolores, doloribus possimus, provident eligendi beatae asperiores quam maiores!</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
