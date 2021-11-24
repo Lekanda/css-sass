@@ -1,0 +1,6 @@
+.contenedor-responsive {
+    background-color: #ffffff;
+    width: min(90%, 1000px);
+    height: 400px;
+    margin: 0 auto;
+}
