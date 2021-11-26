@@ -145,22 +145,40 @@ img {
 }
 
 /** Bloque Nosotros */
-
 .sobre-nosotros {
-    background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100% ), url(../img/nosotros.jpg);
-    background-position: left center ;
-    padding: 10rem 0;
+    background-image: linear-gradient( to bottom, transparent 50%, #037bc0 50%, #037bc0 100% ), url(../img/nosotros.jpg);
+    background-position: center, top left ;
     background-repeat: no-repeat;
-    background-size: 100%, 120rem;
+    background-size: 100%, 70rem;
+}
+@media(min-width: 768px) {
+    .sobre-nosotros {
+        background-image: linear-gradient( to right, transparent 50%, #037bc0 50%, #037bc0 100% ), url(../img/nosotros.jpg);
+        background-position: left center ;
+        padding: 10rem 0;
+        background-size: 100%, 160rem;
+    }
 }
 .sobre-nosotros-grid {
-    display: flex;
-    justify-content: flex-end;
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+@media(min-width: 768px) {
+    .sobre-nosotros-grid {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: unset;
+        column-gap: 10rem;
+    }
 }
 .texto-nosotros {
-    flex-basis: 50%;
-    padding-left: 10rem;
+    grid-row: 2/3;
     color: #FFF;
+    padding: 5rem;
+}
+@media(min-width: 768px) {
+    .texto-nosotros {
+        grid-column: 2/3;
+    }
 }
 
 /** Listado de Productos **/
