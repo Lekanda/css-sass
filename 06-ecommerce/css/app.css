@@ -262,15 +262,36 @@ img {
 }
 .site-footer h3 {
     margin-bottom: .5rem;
+    text-align: center;
 }
-.grid-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+@media(min-width: 768px) {
+    .site-footer h3 {
+        text-align: left;
+    }
+    .grid-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }
+.grid-footer > div{
+    margin-bottom: 2rem;
+}
+@media(min-width: 768px) {
+    .grid-footer > div{
+        margin: 0;
+    }
+}
+
 
 .footer-menu a {
     display: block;
+    text-align: center;
+}
+@media(min-width: 768px) {
+    .footer-menu a {
+        text-align: left;
+    }
 }
 
 .copyright {
