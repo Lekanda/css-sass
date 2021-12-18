@@ -310,6 +310,12 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 5rem;
+}
+@media(min-width: 768px){
+    .informacion-nosotros{
+        padding: 0;
+    }
 }
 
 /** Blog */
