@@ -10,7 +10,10 @@ body {
     font-size: 1.6rem;
     line-height: 2;
 }
-
+ul{
+    margin: 0;
+    padding: 0;
+}
 /* Globales */
 h1, 
 h2, 
@@ -55,10 +58,17 @@ img {
     transition: background-color .3s ease-out ;
     text-align: center;
     border: none;
+    width: 100%;
 }
 .btn:hover {
     background-color: #769c02;
     cursor: pointer;
+}
+@media(min-width: 768px) {
+    .btn {
+        width: auto;
+        padding: 1.5rem;
+    }
 }
 
 /** Utilidades */
@@ -364,6 +374,25 @@ img {
     width: 60rem;
     margin: 0 auto;
 }
+
+
+/* GALERIA*/
+.galeria li{
+    margin-bottom: 1.5rem;
+}
+@media(min-width: 768px) {
+    .galeria {
+        display: grid;
+        /* grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    
+        list-style: none;
+    }
+}
+
+
+
 
 /* Formulario */
 
