@@ -27,7 +27,33 @@ body{
     line-height: 1.5;
 }
 
+h1, h2, h3{
+    font-weight: 900;
+    font-family: var(--fuenteSecundaria);
+    margin: calc(var(--separacion) / 2) 0;
+}
 h1{
-    font-family: var(--fuentePrincipal);
-    color: var(--primario);
+    font-size: 4.4rem;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 2.8rem;
+}
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Globales */
+.contenedor{
+    max-width: 120rem; 
+    width: 90%;
+    margin: 0 auto;
+}
+
+/** Utilidades **/
+.text-center{
+    text-align: center;
 }
