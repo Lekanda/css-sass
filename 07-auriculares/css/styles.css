@@ -13,8 +13,18 @@
     --fuenteSecundaria: 'Lato', sans-serif;
 }
 
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
 body{
     font-family: var(--fuentePrincipal);
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
 
 h1{
