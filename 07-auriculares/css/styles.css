@@ -1,5 +1,14 @@
 /* Custom Propertys */
 :root{
+    --primario: #1073ba;
+    --secundario: #00da55;
+    --gris: #3b3b3b;
+    --blanco: #FFF;
+    --negro: #1f1e1e;
+    --grisClaro: #e1e1e1;
+
+    --separacion: 5rem;
+
     --fuentePrincipal: 'Roboto', sans-serif;
     --fuenteSecundaria: 'Lato', sans-serif;
 }
@@ -10,4 +19,5 @@ body{
 
 h1{
     font-family: var(--fuentePrincipal);
+    color: var(--primario);
 }
