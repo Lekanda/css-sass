@@ -117,5 +117,37 @@ img{
     font-weight: 900;
 }
 
+/*  Iconos caracteristicas  */
+.iconos{
+    padding: var(--separacion) 0;
+}
+@media(min-width: 768px) {
+    .iconos{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+.icono{
+    text-align: center;
+    margin-bottom: calc(var(--separacion) / 2);
+}
+.icono:last-of-type{
+    margin: 0;
+}
+@media(min-width: 768px) {
+    .icono{
+        margin: 0;
+    }
+}
+.icono img{
+    width: 5rem;
+    margin: 0 auto;
+}
+.icono h3{
+    text-transform: uppercase;
+    color: var(--primario);
+    margin-top: calc(var(--separacion) / 2);
+}
 
 
