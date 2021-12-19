@@ -59,6 +59,15 @@ img{
     text-align: center;
 }
 
+/*  degradados  */
+/*  -webkit para que funcione en chrome el degradado.  */
+.degradado-verde{
+    color: transparent;
+    background: linear-gradient(to right, var(--primario) 0%, var(--secundario) 100%);
+    -webkit-background-clip: text; 
+    background-clip: text;
+}
+
 /* Header */
 .header{
     background-color: var(--negro);
@@ -71,4 +80,39 @@ img{
         grid-template-columns: repeat(2, 1fr);
     }
 }
+.texto-header{
+    text-align: center;
+    padding-top: var(--separacion);
+    
+}
+@media(min-width: 768px) {
+    .texto-header{
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
+.texto-header p{
+    margin: 0;
+}
 
+.tagline-producto{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.nombre-producto{
+    font-size: 6rem;
+    margin: 0;
+}
+@media(min-width: 768px) {
+    .nombre-producto{
+        font-size: 10rem;
+        line-height: 1;
+    }
+}
+.precio-producto span{
+    font-size: 6rem;
+    font-weight: 900;
+}
