@@ -242,6 +242,14 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    transition-property: transform background-size;
+    transition-duration: 300ms;
+}
+.modelo:hover{
+    /* transform: scale(1.1); */
+    transform: scale(1.1) rotate(7deg);
+    background-size: 30rem;
 }
 @media(min-width: 992px) {
     .modelo{
