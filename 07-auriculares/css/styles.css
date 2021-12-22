@@ -170,6 +170,7 @@ img{
     }
 }
     
+
 .sobre-tech-grid{
     display: grid;
     grid-template-rows: repeat(2, 40rem);
@@ -184,6 +185,8 @@ img{
         padding: calc(var(--separacion) * 2);
     }
 }
+
+
 .texto-sobre-tech{
     grid-row: 2 / 3;
     color: var(--blanco);
@@ -206,3 +209,62 @@ img{
 }
 
 
+/* Modelos TechPRO */
+.modelos{
+    padding: var(--separacion) 0;
+}
+.header-modelos{
+    font-size: 6rem;
+    margin-bottom: var(--separacion);
+}
+
+.listado-modelos{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.modelo{
+    background-color: var(--grisClaro);
+    margin-bottom: 2rem;
+    padding-left: 4rem;
+    color: var(--primario);
+    border-radius: 2rem;
+    min-height: 20rem;
+    
+
+}
+.modelo h3{
+    font-size: 2.4rem;
+}
+.modelo .precio{
+    font-size: 4rem;
+    font-weight: 900;
+    line-height: 0;
+}
+.modelo:first-of-type{
+    margin-bottom: 0;
+
+}
+.modelo-x{
+    background-image: url(../img/modelo-x.svg);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+    background-size: 15rem;
+}
+.modelo-y{
+    background-image: url(../img/modelo-y.svg);
+    background-repeat: no-repeat;
+    background-position: 90% center;
+}
+.modelo-z{
+    background-image: url(../img/modelo-z.svg);
+    background-repeat: no-repeat;
+    background-position: 90% center;;
+
+
+    background-color: var(--primario);
+    color: var(--blanco);
+}
+.modelo-z .precio{
+    font-size: 6rem;
+}
