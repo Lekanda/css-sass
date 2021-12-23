@@ -192,10 +192,20 @@ img{
     background-repeat: no-repeat;
     background-position: bottom center;
 }
+@media(min-width: 992px) {
+    .nosotros{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
 
 .contenido-nosotros{
     background-color: var(--blanco);
     padding: 5rem;
+}
+@media(min-width: 992px) {
+    .contenido-nosotros{
+        grid-column: 2/4;
+    }
 }
 
 .contenido-nosotros h2,
