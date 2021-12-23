@@ -44,6 +44,8 @@ img{
 }
 .contenedor{
     max-width: 120rem;
+    margin: 0 auto;
+    width: 90%;
 }
 .btn{
     color: var(--gris);
@@ -64,4 +66,47 @@ img{
 }
 .mt-5{
     margin-top: 5rem;
+}
+
+/**  HEADER **/
+.header{
+    min-height: 60rem;
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 5rem 0;
+}
+@media(min-width: 768px) {
+    .header{
+        padding: 2rem 0;
+    }
+}
+.contenedor-header{
+    display: flex;
+    flex-direction: column;
+    height: calc(60rem - 4rem);
+    justify-content: space-between;
+    color: var(--blanco);
+}
+.nombre-sitio{
+    font-weight: 300;
+    text-align: center;
+    font-size: 3rem;
+}
+@media(min-width: 768px) {
+    .nombre-sitio{
+        font-size: 5rem;
+    }
+}
+
+.nombre-sitio span{
+    font-weight: 900;
+}
+@media(min-width: 768px) {
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }
