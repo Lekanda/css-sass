@@ -24,6 +24,7 @@ body{
 h1,h2,h3{
     font-weight: 900;
     margin: 1rem 0 4rem 0;
+    line-height: 1.2;
 }
 
 h1{
@@ -182,3 +183,23 @@ img{
     margin: 0;
     line-height: 1;
 }
+
+/* Sobre Nosotros en Index */
+.nosotros{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    background-image: url(../img/nosotros.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.contenido-nosotros{
+    background-color: var(--blanco);
+    padding: 5rem;
+}
+
+.contenido-nosotros h2,
+.contenido-nosotros p{
+    margin-bottom: 1rem;
+}
+
