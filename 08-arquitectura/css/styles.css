@@ -213,3 +213,27 @@ img{
     margin-bottom: 1rem;
 }
 
+/* Tipos Modelo */
+.modelo{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+.contenido-modelo{
+    padding: 5rem;
+    background-color: var(--blanco);
+}
+
+.basico{
+    background-image: url(../img/modelo_basico.jpg);
+}
+.premier{
+    background-image: url(../img/modelo_premier.jpg);
+}
+
+.elite{
+    background-image: url(../img/modelo_elite.jpg);
+}
+
