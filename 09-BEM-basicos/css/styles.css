@@ -73,3 +73,22 @@ img {
     padding: 0;
 }
 
+
+
+.productos{
+    margin-top: 5rem;
+}
+
+.productos__heading{
+    color: var(--blanco);
+    text-align: center;
+    padding: 3rem 0;
+}
+@media(min-width: 768px) {
+    .productos__grid{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 2rem;
+    }
+}
+
