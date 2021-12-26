@@ -163,16 +163,20 @@ img {
     font-size: 30px;
 }
 
-
+.nucleus__grid{
+    display: flex;
+    flex-direction: column-reverse;
+}
 @media(min-width: 768px) {
     .nucleus__grid{
         display: grid;
-        grid-template-columns: .5fr 1.5fr;
-        gap: 3rem;
+        grid-template-columns: 1fr 2fr;
+        gap: 5rem;
+        align-items: center;
 
     }
     .nucleus__imagen{
-        max-width: 70rem;
+        max-width: 90rem;
     }
     
 }
@@ -181,11 +185,11 @@ img {
         display: flex;
         flex-direction: column;
         gap: 2rem;
-        justify-content: center;
     }
     .listado__elemento{
         border: 1px solid #e1e1e1;
         padding: 1rem;
+        transition: transform 300ms;
     }
     .listado__elemento:hover{
         transform: scale(1.1);
