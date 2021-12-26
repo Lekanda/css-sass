@@ -114,6 +114,20 @@ img {
         margin: 0 auto;
     }
 }
+.header__boton{
+    background-color: var(--primario);
+    color: var(--blanco);
+    display: block;
+    padding: 1rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+@media(min-width: 768px) {
+    .header__boton{
+        padding: 1rem 3rem;
+        display: inline-block;
+    }
+}
 
 
 
