@@ -194,10 +194,32 @@ img {
     color: var(--primario);
     margin: 0;
 }
+.listado__numero{
+    font-size: 6rem;
+    margin: 0;
+    font-weight: 900;
+    color: var(--primario);
+    text-align: center;
+}
+@media(min-width: 768px) {
+    .listado__numero{
+        flex-basis: 20rem;
+        text-align: right;
+        font-size: 4rem;
+    }
+}
 .listado__texto{
     margin: 0;
     font-size: 2rem;
     font-weight: 400;
+}
+@media(min-width: 768px) {
+    .listado__elemento--2col{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
 }
 @media(min-width: 768px) {
     .listado{
@@ -260,5 +282,31 @@ img {
         grid-template-columns: repeat(2,1fr);
         gap: 5rem;
         align-items: center;
+    }
+}
+
+
+/* Comisiones */
+@media(min-width: 768px) {
+    .comisiones__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 5rem;
+        align-items: flex-end;
+    }
+}
+@media(min-width: 998px) {
+    .comisiones__grid{
+        align-items: center;
+    }
+}
+.comisiones__texto{
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+@media(min-width: 768px) {
+    .comisiones__texto{
+        text-align: left;
     }
 }
