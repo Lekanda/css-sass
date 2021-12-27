@@ -227,23 +227,29 @@ img {
 /* Seguridad */
 .seguridad{
     background-color: var(--primario);
-    padding: 10rem 0;
+    padding: 20rem 0;
     position: relative;
+    margin: 10rem 0;
+    overflow: hidden;
 }
 .seguridad::before,
 .seguridad::after{
     background-color: var(--blanco);
     content: '';
     height: 20rem;
-    width: 100%;
+    width: 130%;
     position: absolute;
-    
+
 }
 .seguridad::before{
-
+    top: -10rem;
+    left: 0;
+    transform: rotate(3deg);
 }
 .seguridad::after{
-
+    bottom: -10rem;
+    left: 0;
+    transform: rotate(-3deg);
 }
 .seguridad__heading{
     color: var(--blanco);
