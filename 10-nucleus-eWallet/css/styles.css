@@ -36,6 +36,10 @@ img {
     max-width: 100%;
     display: block;
 }
+.mask{
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
 [class$="__contenedor"]{
     max-width: 120rem;
     margin: 0 auto;
@@ -228,7 +232,16 @@ img {
 .seguridad{
     background-color: var(--primario);
     padding: 10rem 0;
-
+    transform: rotate(3deg) scale(1.3);
+    margin: 50rem 0;
+}
+@media(min-width: 768px) {
+    .seguridad{
+        margin: 30rem 0;
+    }
+}
+.seguridad__contenedor{
+    transform: rotate(-3deg) scale(.75);
 }
 .seguridad__heading{
     color: var(--blanco);
