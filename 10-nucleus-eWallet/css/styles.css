@@ -41,6 +41,10 @@ img {
     margin: 0 auto;
     width: 90%;
 }
+[class$="__heading"]{
+    text-align: center;
+    margin-bottom: 5rem;
+}
 
 
 
@@ -93,7 +97,6 @@ img {
     }
 }
 .header__heading{
-    text-align: center;
     font-size: 3rem;
 }
 @media(min-width: 768px) {
@@ -157,11 +160,6 @@ img {
 .nucleus{
     margin-top: 3rem;
 }
-.nucleus__heading{
-    text-align: center;
-    margin-bottom: 5rem;
-    font-size: 30px;
-}
 
 .nucleus__grid{
     display: flex;
@@ -186,6 +184,7 @@ img {
     transition: transform 300ms;
     margin-bottom: 5rem;
     box-shadow: 0px 0px 12px 2px rgb(0 0 0 /.15);
+    background-color: var(--blanco);
 }
 .listado__elemento:hover{
     transform: scale(1.1);
@@ -220,5 +219,26 @@ img {
         margin: 0;
         font-size: 12px;
         font-weight: 400;
+    }
+}
+
+
+
+/* Seguridad */
+.seguridad{
+    background-color: var(--primario);
+    padding: 10rem 0;
+
+}
+.seguridad__heading{
+    color: var(--blanco);
+}
+
+@media(min-width: 768px) {
+    .seguridad__grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 5rem;
+        align-items: center;
     }
 }
