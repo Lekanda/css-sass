@@ -6,4 +6,10 @@ body{
 h1{
     color: green;
     font-size: 25px;
+    display: flex;
+    gap: 2rem;
+}
+div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
