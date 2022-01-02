@@ -1,0 +1,14 @@
+{
+  "name": "11-cafeteria",
+  "version": "1.0.0",
+  "description": "Ejemplo con SASS y Gulp.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andres Bernaola",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
