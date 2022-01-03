@@ -1,10 +1,13 @@
 const {src, dest,watch,series,parallel} = require('gulp');
+
+// CSS
 // De gulp-sass traemos el compilador.
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
-
+// Imagenes
 const imagemin = require('gulp-imagemin');
+const webp = require('gulp-webp');
 
 function css(done){
     src('src/scss/app.scss')
@@ -29,12 +32,19 @@ function imagenes(){
         // Destino de img minificada.
         .pipe(dest('build/img'))
 }
+// Imagenes a formato Webp
+function versionWebp() {
+    return src('src/img/**/*.{jpg,png}')
+        .pipe(webp())
+        .pipe(dest('build/img'))
+}
 
 
 exports.css = css;
 exports.dev = dev;
 exports.imagenes = imagenes;
-exports.default = series(imagenes,css,dev);
+exports.versionWebp = versionWebp;
+exports.default = series(imagenes,versionWebp,css,dev);
 
 
 // series: Se inicia una tarea , y hasta que finaliza, inicia la siguiente.
