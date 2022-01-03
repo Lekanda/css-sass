@@ -14,7 +14,7 @@ function css(done){
     done();
 }
 function dev() {
-    watch('src/scss/app.scss', css);
+    watch('src/scss/*/*.scss', css);
 }
 
 

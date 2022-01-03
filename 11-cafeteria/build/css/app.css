@@ -1,3 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
+}
+
+h1 {
+  color: yellowgreen;
+}
+
 body {
   background-color: red;
 }
