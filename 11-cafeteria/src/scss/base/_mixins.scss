@@ -1,11 +1,17 @@
 @use 'base/variables' as v;
 
-@mixin color{
-    color: v.$negro;
-    font-size: 2rem;
-    text-decoration: none;
+@mixin telefono{
+    @media(min-width: v.$telefono){
+        @content;
+    }
 }
-
-@mixin bgColor($color){
-    background-color: $color;
+@mixin tablet{
+    @media(min-width: v.$tablet){
+        @content;
+    }
+}
+@mixin desktop{
+    @media(min-width: v.$desktop){
+        @content;
+    }
 }

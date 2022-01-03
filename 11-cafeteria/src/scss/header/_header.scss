@@ -4,7 +4,16 @@
 .header{
     padding: v.$separacion 0;
     position: relative;
-    @include m.bgColor(red);
+
+    @include m.telefono{
+        padding: 4rem 0;
+    }
+    @include m.tablet{
+        padding: 3rem 0;
+    }
+    @include m.desktop{
+        padding: 2rem 0;
+    }
 
     &::before{
         content: '';
@@ -26,5 +35,4 @@
 // Header de cada pagina
 .header-inicio{
     background-image: url(../img/header_inicio.jpg);
-    @include m.bgColor(blue);
 }
