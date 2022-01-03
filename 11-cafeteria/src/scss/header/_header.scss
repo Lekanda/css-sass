@@ -1,4 +1,26 @@
 @use 'base/variables' as v;
 .header{
-    color: v.$negro;
+    padding: v.$separacion 0;
+    position: relative;
+
+    &::before{
+        content: '';
+        background-color: v.$negro;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: .6;
+    }
+
+    .contenido-header{
+       position: relative;
+    }
+}
+
+
+// Header de cada pagina
+.header-inicio{
+    background-image: url(../img/header_inicio.jpg);
 }

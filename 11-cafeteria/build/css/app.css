@@ -402,7 +402,25 @@ h3 {
 - @import: Incluye el archivo pero tambien el contenido
 */
 .header {
-  color: #000;
+  padding: 5rem 0;
+  position: relative;
+}
+.header::before {
+  content: "";
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.6;
+}
+.header .contenido-header {
+  position: relative;
+}
+
+.header-inicio {
+  background-image: url(../img/header_inicio.jpg);
 }
 
 .navegacion {
