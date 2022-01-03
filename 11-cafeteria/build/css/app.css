@@ -393,7 +393,7 @@ h3 {
 }
 
 .bg-primario {
-  background-color: #E8505B;
+  background-color: #5E311e;
 }
 
 /*
@@ -423,8 +423,36 @@ h3 {
   background-image: url(../img/header_inicio.jpg);
 }
 
-.navegacion {
-  color: #000;
+.nav-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .nav-principal {
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 0;
+  }
+}
+.nav-principal a {
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .nav-principal a {
+    margin-bottom: 0;
+  }
+}
+.nav-principal a:hover {
+  color: #c39c63;
+}
+.nav-principal a.activo {
+  color: #c39c63;
 }
 
 .barra {
