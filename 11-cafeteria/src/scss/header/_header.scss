@@ -1,3 +1,4 @@
-h3{
-    color: gray;
+@use 'base/variables' as v;
+.header{
+    color: v.$negro;
 }

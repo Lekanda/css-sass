@@ -388,11 +388,23 @@ h3 {
   font-size: 3.2rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.bg-primario {
+  background-color: #E8505B;
+}
+
 /*
 - @forward: incluye archivos dentro de otros, solo eso.
 - @use: Incluye el archivo pero tambien el contenido
 - @import: Incluye el archivo pero tambien el contenido
 */
-h3 {
-  color: gray;
+.header {
+  color: #000;
+}
+
+.navegacion {
+  color: #000;
 }
