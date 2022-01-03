@@ -15,15 +15,21 @@ function css(done){
 }
 function dev() {
     watch('src/scss/**/*.scss', css);
+    watch('src/img/**/*', imagenes);
 }
 
 
-
+// Imagenes con Gulp
+function imagenes(){
+    return src('src/img/**/*')
+        .pipe(dest('build/img'))
+}
 
 
 exports.css = css;
+exports.imagenes = imagenes;
 exports.dev = dev;
-exports.default = series(css,dev);
+exports.default = series(imagenes,css,dev);
 
 
 // series: Se inicia una tarea , y hasta que finaliza, inicia la siguiente.
