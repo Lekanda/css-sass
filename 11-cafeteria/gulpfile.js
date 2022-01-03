@@ -4,6 +4,8 @@ const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
 
+const imagemin = require('gulp-imagemin');
+
 function css(done){
     src('src/scss/app.scss')
         // Compilar
@@ -22,13 +24,16 @@ function dev() {
 // Imagenes con Gulp
 function imagenes(){
     return src('src/img/**/*')
+        // Minifica la imagen.
+        .pipe(imagemin({optimizationLevel: 3}))
+        // Destino de img minificada.
         .pipe(dest('build/img'))
 }
 
 
 exports.css = css;
-exports.imagenes = imagenes;
 exports.dev = dev;
+exports.imagenes = imagenes;
 exports.default = series(imagenes,css,dev);
 
 
