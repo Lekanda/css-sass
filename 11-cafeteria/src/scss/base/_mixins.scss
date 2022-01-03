@@ -1,0 +1,11 @@
+@use 'base/variables' as v;
+
+@mixin color{
+    color: v.$negro;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+@mixin bgColor($color){
+    background-color: $color;
+}

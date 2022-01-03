@@ -1,7 +1,10 @@
 @use 'base/variables' as v;
+@use 'base/mixins' as m;
+
 .header{
     padding: v.$separacion 0;
     position: relative;
+    @include m.bgColor(red);
 
     &::before{
         content: '';
@@ -23,4 +26,5 @@
 // Header de cada pagina
 .header-inicio{
     background-image: url(../img/header_inicio.jpg);
+    @include m.bgColor(blue);
 }
