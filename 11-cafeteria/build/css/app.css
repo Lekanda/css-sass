@@ -338,8 +338,17 @@ template {
   display: none;
 }
 
-.contenedor {
-  max-width: 120rem;
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
 }
 
 /*

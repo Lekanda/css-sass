@@ -1,3 +1,12 @@
-.contenedor{
-    max-width: 120rem;
+@use 'variables' as v;
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    font-family: v.$fuente_principal;
 }
