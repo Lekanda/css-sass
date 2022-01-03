@@ -10,10 +10,12 @@ html{
 body{
     font-family: v.$fuente_principal;
     font-size: 1.6rem;
+    background-color: v.$cafeClaro;
 }
 p{
     color: v.$negro;
-    font-size: 2rem;
+    font-size: 1.6rem;
+    line-height: 2;
 }
 .contenedor{
     width: 95%;
