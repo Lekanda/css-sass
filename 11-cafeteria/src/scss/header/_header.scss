@@ -4,17 +4,8 @@
 .header{
     padding: v.$separacion 0;
     position: relative;
-
-    @include m.telefono {
-        
-    }
-
     @include m.tablet {
-        
-    }
-
-    @include m.desktop {
-        
+        min-height: 70rem;
     }
 
     &::before{
@@ -30,6 +21,16 @@
 
     .contenido-header{
        position: relative;
+
+       h1{
+           text-align: center;
+           text-transform: uppercase;
+           color: v.$blanco;
+           margin-top: 5rem;
+           @include m.tablet {
+               margin-top: 10rem;
+           }
+       }
     }
 }
 
