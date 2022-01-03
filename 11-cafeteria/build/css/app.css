@@ -3,9 +3,8 @@ body {
 }
 
 h1 {
-  color: green;
+  color: white;
   font-size: 25px;
-  display: -ms-flexbox;
   display: flex;
   gap: 2rem;
 }

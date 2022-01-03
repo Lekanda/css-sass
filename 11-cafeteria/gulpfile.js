@@ -1,4 +1,4 @@
-const {src, dest,watch} = require('gulp');
+const {src, dest,watch,series,parallel} = require('gulp');
 // De gulp-sass traemos el compilador.
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
@@ -17,5 +17,14 @@ function dev() {
     watch('src/scss/app.scss', css);
 }
 
+
+
+
+
 exports.css = css;
 exports.dev = dev;
+exports.default = series(css,dev);
+
+
+// series: Se inicia una tarea , y hasta que finaliza, inicia la siguiente.
+// parallel: Se inician todas al mismo tiempo
