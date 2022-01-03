@@ -1,0 +1,8 @@
+/*
+- @forward: incluye archivos dentro de otros, solo eso.
+- @use: Incluye el archivo pero tambien el contenido
+- @import: Incluye el archivo pero tambien el contenido
+*/
+@forward 'normalize';
+@forward 'variables';
+@forward 'globales';
