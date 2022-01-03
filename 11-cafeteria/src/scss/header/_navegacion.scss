@@ -21,6 +21,7 @@
         text-transform: uppercase;
         font-weight: 700;
         margin-bottom: 1rem;
+        transition: color 400ms;
 
         @include m.tablet {
             margin-bottom: 0;

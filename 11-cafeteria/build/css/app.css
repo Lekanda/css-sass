@@ -460,6 +460,7 @@ h3 {
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 1rem;
+  transition: color 400ms;
 }
 @media (min-width: 768px) {
   .nav-principal a {
