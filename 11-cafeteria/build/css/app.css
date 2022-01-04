@@ -430,8 +430,13 @@ h3 {
   text-align: center;
 }
 
-.bg-primario {
-  background-color: #5E311e;
+.margin-negativo-10 {
+  margin-top: -10rem;
+  position: relative;
+}
+
+.bg-white {
+  background-color: #fff;
 }
 
 /*
@@ -673,10 +678,10 @@ h3 {
 .nuestro-menu {
   background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, #5E311e, #5E311e);
   background-repeat: no-repeat;
-  background-position: center 5rem, center 92%, 100%;
+  background-position: center 5rem, center 90%, 100%;
   background-size: 175%;
   padding: 15rem 2rem 20rem 2rem;
-  min-height: 230rem;
+  min-height: 250rem;
 }
 @media (min-width: 480px) {
   .nuestro-menu {
@@ -694,14 +699,14 @@ h3 {
   .nuestro-menu {
     background-size: 70%, 70%, 100%;
     padding: 17rem 5rem 20rem 5rem;
-    min-height: 135rem;
+    min-height: 140rem;
   }
 }
 @media (min-width: 1440px) {
   .nuestro-menu {
     background-size: 50%, 50%, 100%;
     padding: 17rem 5rem 20rem 5rem;
-    min-height: 150rem;
+    min-height: 130rem;
   }
 }
 
@@ -736,4 +741,30 @@ h3 {
   font-size: 4rem;
   color: #fff;
   font-weight: 700;
+}
+
+.nuestros-testimoniales {
+  padding: 10rem 2rem;
+  background-color: #fff;
+}
+@media (min-width: 768px) {
+  .nuestros-testimoniales {
+    padding: 10rem;
+  }
+}
+.nuestros-testimoniales .testimonial {
+  background-color: #ebe7de;
+  padding: 2rem 4rem;
+  max-width: 50rem;
+  margin: 0 auto;
+  border-radius: 1rem;
+}
+.nuestros-testimoniales .testimonial p {
+  font-weight: 700;
+}
+.nuestros-testimoniales .testimonial .autor {
+  text-align: right;
+  font-size: 2.4rem;
+  color: #5E311e;
+  font-family: "Bona Nova", serif;
 }

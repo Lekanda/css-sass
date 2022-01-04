@@ -4,10 +4,10 @@
 .nuestro-menu{
     background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, v.$primario, v.$primario);
     background-repeat: no-repeat;
-    background-position: center 5rem, center 92%,100%;
+    background-position: center 5rem, center 90%,100%;
     background-size: 175%;
     padding: 15rem 2rem 20rem 2rem;
-    min-height: 230rem;
+    min-height: 250rem;
 
     @include m.telefono {
         min-height: 210rem;
@@ -22,12 +22,12 @@
     @include m.desktop{
         background-size: 70%,70%,100%;
         padding: 17rem 5rem 20rem 5rem;
-        min-height: 135rem;
+        min-height: 140rem;
     }
     @include m.desktop-xl {
         background-size: 50%,50%,100%;
         padding: 17rem 5rem 20rem 5rem;
-        min-height: 150rem;
+        min-height: 130rem;
     }
 
 }
