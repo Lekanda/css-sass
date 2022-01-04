@@ -674,17 +674,66 @@ h3 {
   background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, #5E311e, #5E311e);
   background-repeat: no-repeat;
   background-position: center 5rem, center 92%, 100%;
-  background-size: 200%;
-  padding: 15rem 5rem 20rem 5rem;
+  background-size: 175%;
+  padding: 15rem 2rem 20rem 2rem;
+  min-height: 230rem;
+}
+@media (min-width: 480px) {
+  .nuestro-menu {
+    min-height: 210rem;
+  }
 }
 @media (min-width: 768px) {
   .nuestro-menu {
     padding: 15rem 0 20rem 0;
     background-size: 100%;
+    min-height: 145rem;
   }
 }
 @media (min-width: 1024px) {
   .nuestro-menu {
-    background-size: 50%, 50%, 100%;
+    background-size: 70%, 70%, 100%;
+    padding: 17rem 5rem 20rem 5rem;
+    min-height: 135rem;
   }
+}
+@media (min-width: 1440px) {
+  .nuestro-menu {
+    background-size: 50%, 50%, 100%;
+    padding: 17rem 5rem 20rem 5rem;
+    min-height: 150rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+  }
+}
+
+.menu h3 {
+  color: #fff;
+  font-size: 22px;
+}
+.menu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li p {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #ebe7de;
+  margin: 0 0 2rem 0;
+}
+.menu li p span {
+  display: block;
+  color: #c39c63;
+}
+.menu li .precio {
+  font-size: 4rem;
+  color: #fff;
+  font-weight: 700;
 }

@@ -15,6 +15,11 @@
         @content;
     }
 }
+@mixin desktop-xl{
+    @media(min-width: v.$desktop-xl){
+        @content;
+    }
+}
 
 
 @mixin grid($columnas,$separacion){

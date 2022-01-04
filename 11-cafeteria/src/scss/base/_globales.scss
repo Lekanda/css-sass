@@ -1,4 +1,5 @@
 @use 'variables' as v;
+@use 'base/mixins' as m;
 
 html{
     font-size: 62.5%;
@@ -21,6 +22,7 @@ p{
     width: 95%;
     max-width: 120rem;
     margin: 0 auto;
+    
 }
 
 a{
