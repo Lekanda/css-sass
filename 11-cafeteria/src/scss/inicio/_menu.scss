@@ -1,0 +1,19 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.nuestro-menu{
+    background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, v.$primario, v.$primario);
+    background-repeat: no-repeat;
+    background-position: center 5rem, center 92%,100%;
+    background-size: 200%;
+    padding: 15rem 5rem 20rem 5rem;
+
+    @include m.tablet {
+        padding: 15rem 0 20rem 0;
+        background-size: 100%;
+    }
+    @include m.desktop{
+        background-size: 50%,50%,100%;
+    }
+
+}

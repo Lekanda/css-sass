@@ -30,6 +30,18 @@ h2{
         margin: 0 auto;
     }
 }
+.heading-blanco{
+    @extend h2;
+    color: v.$blanco;
+    padding-top: 19px;
+
+    span{
+        color: v.$blanco;
+    }
+    &::after{
+        display: none;
+    }
+}
 h3{
     font-size: 3.2rem;
 }
