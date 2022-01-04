@@ -374,8 +374,14 @@ img {
   display: block;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 h1, h2, h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Raleway", sans-serif;
   margin: 0 0 5rem 0;
   text-transform: uppercase;
   text-align: center;
@@ -525,4 +531,17 @@ h3 {
     margin-top: -10rem;
     position: relative;
   }
+}
+
+.iconos {
+  margin-top: 5rem;
+}
+.iconos .listado-iconos li {
+  margin: 0 auto;
+  width: 12rem;
+}
+.iconos .listado-iconos li p {
+  font-family: "Bona Nova", serif;
+  font-size: 3.2rem;
+  color: #5E311e;
 }
