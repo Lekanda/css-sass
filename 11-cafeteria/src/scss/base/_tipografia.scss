@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+
+h1,h2,h3{
+    font-family: v.$fuente_principal;
+    margin: 0 0 v.$separacion 0;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+}
+h1{
+    font-size: 4rem
+}
+h2{
+    font-size: 3.6rem;
+    color: v.$primario;
+
+    span{
+        color: v.$secundario;
+        font-size: 1.8rem;
+        display: block;
+    }
+
+    &::after{
+        content: '';
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        background-image: url(../img/cafe.svg);
+        background-size: 10rem;
+        margin: 0 auto;
+    }
+}
+h3{
+    font-size: 3.2rem;
+}

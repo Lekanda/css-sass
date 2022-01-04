@@ -3,7 +3,7 @@
 
 .contenido-principal{
     background-color: v.$blanco;
-    padding: 2rem;
+    padding: 5rem 2rem;
 
     @include m.tablet {
         padding: 10rem;

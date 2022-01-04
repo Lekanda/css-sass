@@ -375,7 +375,11 @@ img {
 }
 
 h1, h2, h3 {
+  font-family: "Roboto", sans-serif;
   margin: 0 0 5rem 0;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
 }
 
 h1 {
@@ -384,6 +388,21 @@ h1 {
 
 h2 {
   font-size: 3.6rem;
+  color: #5E311e;
+}
+h2 span {
+  color: #c39c63;
+  font-size: 1.8rem;
+  display: block;
+}
+h2::after {
+  content: "";
+  display: block;
+  width: 10rem;
+  height: 10rem;
+  background-image: url(../img/cafe.svg);
+  background-size: 10rem;
+  margin: 0 auto;
 }
 
 h3 {
@@ -498,7 +517,7 @@ h3 {
 
 .contenido-principal {
   background-color: #fff;
-  padding: 2rem;
+  padding: 5rem 2rem;
 }
 @media (min-width: 768px) {
   .contenido-principal {
