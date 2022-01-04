@@ -536,6 +536,15 @@ h3 {
 .iconos {
   margin-top: 5rem;
 }
+@media (min-width: 768px) {
+  .iconos .listado-iconos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    -webkit-column-gap: 2rem;
+       -moz-column-gap: 2rem;
+            column-gap: 2rem;
+  }
+}
 .iconos .listado-iconos li {
   margin: 0 auto;
   width: 12rem;
