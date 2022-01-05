@@ -5,16 +5,30 @@ const {src, dest,watch,series,parallel} = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
 const autoprefixer = require('autoprefixer');
+const cssnano = require('cssnano');
+
+// SOURCEMAPS
+const sourcemaps=require('gulp-sourcemaps');
+
+
 // Imagenes
 const imagemin = require('gulp-imagemin');
 const webp = require('gulp-webp');
 const avif = require('gulp-avif');
 
+
+
+
+
 function css(done){
     src('src/scss/app.scss')
+        // Inicia un sourcemap para CSS y lo guarda en un archivo.
+        .pipe(sourcemaps.init())
         // Compilar
         .pipe(sass())
-        .pipe(postcss([autoprefixer()])) // Crea codigo para navegadores viejos. Browserlist en package.json
+        .pipe(postcss([autoprefixer(), cssnano()])) // Crea codigo para navegadores viejos. Browserlist en package.json
+        // Escribe un sourcemap antes de la salida.
+        .pipe(sourcemaps.write('.'))
         /// Destino de la compilacion
         .pipe(dest('./build/css'))
     done();
@@ -24,6 +38,8 @@ function dev() {
     watch('src/img/**/*', imagenes);
     watch('src/img/**/*', imagenes);
 }
+
+
 
 
 // Imagenes con Gulp
