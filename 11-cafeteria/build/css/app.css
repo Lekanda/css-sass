@@ -777,6 +777,35 @@ h3 {
   font-family: "Bona Nova", serif;
 }
 
+@media (min-width: 768px) {
+  .contenido-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+.contenido-nosotros .imagen {
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .contenido-nosotros .imagen {
+    margin-bottom: 0;
+    margin-right: 2rem;
+  }
+}
+.contenido-nosotros .imagen img {
+  -webkit-transform: rotate(-6deg);
+          transform: rotate(-6deg);
+  border: 3rem solid #fff;
+  box-shadow: 9px 10px 5px -7px rgba(0, 0, 0, 0.35);
+}
+.contenido-nosotros .texto blockquote {
+  margin: 0;
+  padding: 1rem;
+  border-left: 0.5rem solid #5E311e;
+  font-size: 2rem;
+}
+
 .footer {
   background-color: #5E311e;
 }
