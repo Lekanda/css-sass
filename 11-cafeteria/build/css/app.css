@@ -428,19 +428,6 @@ h3 {
   font-size: 3.2rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.margin-negativo-10 {
-  margin-top: -10rem;
-  position: relative;
-}
-
-.bg-white {
-  background-color: #fff;
-}
-
 /*
 - @forward: incluye archivos dentro de otros, solo eso.
 - @use: Incluye el archivo pero tambien el contenido
@@ -488,6 +475,14 @@ h3 {
 
 .header-nosotros {
   background-image: url(../img/header_nosotros.jpg);
+}
+
+.header-proceso {
+  background-image: url(../img/header_proceso.jpg);
+}
+
+.header-menu {
+  background-image: url(../img/header_menu.jpg);
 }
 
 .nav-principal {
@@ -806,6 +801,68 @@ h3 {
   font-size: 2rem;
 }
 
+.proceso-cafe {
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .proceso-cafe {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
+}
+.proceso-cafe:last-of-type {
+  margin-bottom: 0;
+}
+.proceso-cafe:nth-child(even) .texto {
+  order: -1;
+}
+.proceso-cafe .imagen,
+.proceso-cafe .texto {
+  flex: 1;
+}
+.proceso-cafe .texto {
+  margin-top: 1rem;
+}
+.proceso-cafe .texto h3 {
+  margin: 0;
+  text-align: left;
+  color: #5E311e;
+}
+.proceso-cafe .texto h3::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 5px;
+  background-color: #c39c63;
+}
+
+.contenido-menu {
+  background-image: url(../img/cafe.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  aspect-ratio: 3/6;
+}
+@media (min-width: 480px) {
+  .contenido-menu {
+    aspect-ratio: 3/4;
+  }
+}
+@media (min-width: 768px) {
+  .contenido-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    aspect-ratio: 16/6;
+    background-size: 40%;
+    background-position: bottom right;
+  }
+}
+.contenido-menu .texto p {
+  font-size: 2rem;
+}
+
 .footer {
   background-color: #5E311e;
 }
@@ -846,4 +903,21 @@ h3 {
 .footer-box p, .footer-box a {
   font-size: 2rem;
   margin: 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-negativo-10 {
+  margin-top: -10rem;
+  position: relative;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
 }
