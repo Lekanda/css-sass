@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    <header class="header header-inicio">
+    <header class="header header-nosotros">
 
         <div class="contenido-header contenedor">
 
@@ -23,8 +23,8 @@
                 </div>
 
                 <nav class="nav-principal">
-                    <a class="activo" href="index.html">Inicio</a>
-                    <a href="nosotros.html">Nosotros</a>
+                    <a href="index.html">Inicio</a>
+                    <a class="activo" href="nosotros.html">Nosotros</a>
                     <a href="proceso.html">Proceso</a>
                     <a href="menu.html">Menu</a>
                     <a href="galeria.html">Galeria</a>
@@ -33,14 +33,42 @@
             </div>
 
             <div class="texto-header">
-                <h1>Disfruta una deliciosa Taza de Café</h1>
+                <h1>Una nueva experiencia cada dia</h1>
             </div>
         </div>
 
     </header>
 
     <main class="contenedor contenido-principal">
-        
+        <h2><span>Conoce más</span> Sobre Nosotros</h2>
+
+        <div class="contenido-nosotros">
+            <div class="imagen">
+                <picture>
+                    <source
+                        srcset="build/img/nosotros_sidebar.avif" 
+                        type="image/avif">
+                    <source
+                        srcset="build/img/nosotros_sidebar.webp" 
+                        type="image/webp">
+                    <source
+                        srcset="build/img/nosotros_sidebar.jpg" 
+                        type="image/jpeg">
+                    <img loading="lazy" decoding="async" src="build/img/nosotros_sidebar.jpg" lazyalt="imagen" width="500" height="300">
+                </picture>
+            </div>
+
+            <div class="texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem eligendi, similique odit, assumenda dicta doloribus labore illo provident molestiae hic voluptas quod facere sit nihil non iusto. Architecto, dolorem reiciendis.</p>
+
+                <blockquote>Excelente sabor</blockquote>
+
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi facilis odit fugit, architecto repellendus nihil voluptatum numquam minima iure, et accusantium dolorem illo praesentium nisi. Id assumenda accusamus consectetur iure!</p>
+
+            </div>
+            
+        </div>
     </main>
 
     <footer class="footer">
