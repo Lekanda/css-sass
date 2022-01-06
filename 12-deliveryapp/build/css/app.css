@@ -535,4 +535,83 @@ h3 {
     width: 100%;
   }
 }
+
+.pasos {
+  margin-top: 5rem;
+}
+.pasos__contenido {
+  background-color: #e8505b;
+  margin-top: -1px;
+}
+.pasos__heading {
+  color: #FFFFFF;
+  text-align: center;
+}
+.pasos__heading--descripcion {
+  font-size: 1.8rem;
+  display: block;
+}
+@media (min-width: 768px) {
+  .pasos__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.pasos__imagen {
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+.pasos__imagen:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.pasos__imagen--contrarota {
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+.pasos__imagen--contrarota:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.pasos__imagen--norota {
+  transition: -webkit-transform 500ms;
+  transition: transform 500ms;
+  transition: transform 500ms, -webkit-transform 500ms;
+}
+.pasos__imagen--norota:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+@media (min-width: 768px) {
+  .pasos__imagen {
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
+  }
+  .pasos__imagen:hover {
+    -webkit-transform: rotate(-4deg) scale(1.2);
+            transform: rotate(-4deg) scale(1.2);
+  }
+  .pasos__imagen--contrarota {
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
+  }
+  .pasos__imagen--contrarota:hover {
+    -webkit-transform: rotate(4deg) scale(1.2);
+            transform: rotate(4deg) scale(1.2);
+  }
+  .pasos__imagen--norota {
+    transition: -webkit-transform 500ms;
+    transition: transform 500ms;
+    transition: transform 500ms, -webkit-transform 500ms;
+  }
+  .pasos__imagen--norota:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
 /*# sourceMappingURL=app.css.map */
