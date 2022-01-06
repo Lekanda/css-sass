@@ -1,0 +1,22 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.favoritos{
+    background-color: v.$grisClaro;
+
+    &__heading{
+        padding: 3rem 0 0 0;
+        text-align: center;
+        color: v.$secundario;
+    }
+
+    &__grid{
+        display: block;
+        
+        @include m.desktop {
+            margin-bottom: 0;
+            @include m.grid(2,4rem);
+        }
+    }
+}

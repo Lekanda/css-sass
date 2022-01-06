@@ -698,4 +698,76 @@ h3 {
   opacity: 0.2;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
+
+.favoritos {
+  background-color: #eceeef;
+}
+.favoritos__heading {
+  padding: 3rem 0 0 0;
+  text-align: center;
+  color: #455a64;
+}
+.favoritos__grid {
+  display: block;
+}
+@media (min-width: 1024px) {
+  .favoritos__grid {
+    margin-bottom: 0;
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.favorito {
+  padding: 2rem;
+  border: 1px solid #e1e1e1;
+  border-radius: 1rem;
+  background-color: #FFFFFF;
+  margin-bottom: 2rem;
+  box-shadow: 0px 0px 2.6rem -0.8rem;
+}
+.favorito:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 1024px) {
+  .favorito {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .favorito__grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 4rem;
+  }
+}
+.favorito__img {
+  margin: 0 auto;
+  width: 95%;
+}
+.favorito__contenido {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.favorito__nombre {
+  margin: 1rem 0;
+  color: #e8505b;
+  font-size: 2.4rem;
+  font-weight: 900;
+}
+.favorito__descripcion {
+  margin: 0;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #455a64;
+}
+@media (min-width: 1024px) {
+  .favorito__descripcion {
+    text-align: left;
+  }
+}
 /*# sourceMappingURL=app.css.map */
