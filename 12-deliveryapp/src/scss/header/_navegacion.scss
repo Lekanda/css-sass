@@ -2,5 +2,22 @@
 @use 'base/mixins' as m;
 
 .navegacion{
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+    @include m.desktop {
+        width: auto;
+        flex-direction: row;
+    }
+    &__link{
+        font-size: 2rem;
+        font-weight: 700;
+        color: v.$negro;
+
+        &--registrar{
+            @include m.boton(v.$primario,v.$blanco)
+        }
+    }
 }
