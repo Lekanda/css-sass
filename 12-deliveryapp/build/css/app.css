@@ -614,4 +614,50 @@ h3 {
             transform: scale(1.2);
   }
 }
+
+.testimoniales {
+  padding: 5rem 0;
+}
+
+.testimonial {
+  background-color: #455a64;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  color: #FFFFFF;
+}
+.testimonial:last-of-type {
+  margin-bottom: 0;
+}
+.testimonial__header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.testimonial__imagen {
+  flex-basis: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonial__autor {
+  color: #FFFFFF;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.testimonial__texto {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 2rem 0 0 0;
+  padding-left: 4rem;
+  position: relative;
+}
+.testimonial__texto::before {
+  content: ' " ';
+  font-size: 10rem;
+  position: absolute;
+  top: -4rem;
+  left: -13px;
+  opacity: 0.2;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
 /*# sourceMappingURL=app.css.map */

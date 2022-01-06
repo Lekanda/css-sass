@@ -1,0 +1,51 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+
+.testimonial{
+    background-color: v.$secundario;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    color: v.$blanco;
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
+
+    &__header{
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    &__imagen{
+        flex-basis: 10rem;
+        border-radius: 50%;
+        overflow: hidden;
+    }
+
+    &__autor{
+        color: v.$blanco;
+        font-weight: bold;
+        margin: .5rem 0;
+    }
+
+    &__texto{
+        font-size: 2rem;
+        line-height: 1.5;
+        margin: 2rem 0 0 0;
+        padding-left: 4rem;
+        position: relative;
+
+        &::before{
+            content: ' " ';
+            font-size: 10rem;
+            position: absolute;
+            top: -4rem;
+            left: -13px;
+            opacity: .2;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    }
+}
