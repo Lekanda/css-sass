@@ -819,4 +819,28 @@ h3 {
     width: auto;
   }
 }
+
+.descargar {
+  background-color: #eceeef;
+  padding: 5rem 0;
+}
+@media (min-width: 768px) {
+  .descargar__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.descargar__imagen {
+  width: 50%;
+  margin: 0 auto;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 300ms;
+}
+.descargar__imagen:hover {
+  -webkit-transform: rotate(4deg) scale(1.2);
+          transform: rotate(4deg) scale(1.2);
+}
 /*# sourceMappingURL=app.css.map */
