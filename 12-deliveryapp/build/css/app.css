@@ -898,4 +898,58 @@ h3 {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
+
+.footer {
+  background-color: #455a64;
+  padding-top: 5rem;
+}
+@media (min-width: 768px) {
+  .footer__grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.footer__widget {
+  margin-bottom: 5rem;
+}
+.footer__widget:last-of-type {
+  margin-bottom: 0;
+}
+.footer__heading {
+  margin: 0;
+  color: #FFFFFF;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer__heading {
+    text-align: left;
+  }
+}
+.footer__link, .footer__texto {
+  font-size: 2rem;
+  line-height: 1.8;
+  color: #FFFFFF;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .footer__link, .footer__texto {
+    text-align: left;
+  }
+}
+.footer__nav, .footer__texto {
+  margin-top: 2rem;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+}
+.footer__copyright {
+  background-color: #e8505b;
+  margin: 0;
+  padding: 2rem;
+  color: #FFFFFF;
+  text-align: center;
+  font-weight: 700;
+}
 /*# sourceMappingURL=app.css.map */
