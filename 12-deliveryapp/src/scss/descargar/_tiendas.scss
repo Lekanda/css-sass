@@ -2,5 +2,46 @@
 @use 'base/mixins' as m;
 
 .tiendas{
-    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__heading{
+        text-align: center;
+        color: v.$secundario;
+        margin: 2rem 0;
+    }
+
+    &__texto{
+        text-align: center;
+        color: v.$secundario;
+        font-weight: 700;
+        margin-bottom: 3rem
+    }
+
+    &__grid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        @include m.tablet {
+            @include m.grid(2,2rem);
+        }
+    }
+
+    &__enlace{
+        justify-content: center;
+        width: 50%;
+
+        transition: transform 300ms;
+        
+        @include m.tablet {
+            width: 100%;
+            // margin-bottom: 0;
+        }
+
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
 }
