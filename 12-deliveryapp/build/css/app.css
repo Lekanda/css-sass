@@ -701,6 +701,7 @@ h3 {
 
 .favoritos {
   background-color: #eceeef;
+  padding: 5rem 0;
 }
 .favoritos__heading {
   padding: 3rem 0 0 0;
@@ -768,6 +769,54 @@ h3 {
 @media (min-width: 1024px) {
   .favorito__descripcion {
     text-align: left;
+  }
+}
+
+.repartidores {
+  padding: 5rem 0;
+}
+.repartidores__heading {
+  text-align: center;
+  color: #455a64;
+}
+@media (min-width: 768px) {
+  .repartidores__grid {
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.repartidores__contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.repartidores__texto {
+  line-height: 1.5;
+  color: #455a64;
+}
+.repartidores__enlace {
+  background-color: #e8505b;
+  font-size: 2rem;
+  padding: 1.2rem 3rem;
+  border-radius: 1rem;
+  font-weight: 700;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  border: none;
+}
+.repartidores__enlace:hover {
+  cursor: pointer;
+  background-color: #e22331;
+}
+@media (min-width: 768px) {
+  .repartidores__enlace {
+    width: auto;
   }
 }
 /*# sourceMappingURL=app.css.map */
