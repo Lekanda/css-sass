@@ -18,16 +18,66 @@
 
     @include m.tablet {
         flex-direction: row;
+        max-width: 80rem;
+        margin-inline: auto; // Centra horizontal
+        margin-block-start: 10rem; // Margin vertical
+
     }
     .plan{
+        background-color: v.$blanco;
+        flex-grow: 1;
+        padding: 16rem 4rem 4rem 4rem;
+        border-bottom: 1px solid #e1e1e1;
+        @include m.tablet {
+            border: none;
+            transition: transform 300ms;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        .precio{
+            font-size: 1.8rem;
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .listado{
+            li{
+                text-align: center;
+                margin-bottom: 2rem;
+
+                &:last-of-type{
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+
+        &.inicio{
+            @include m.iconoBg('../img/icono_inicio.svg');
+        }
 
 
         &.negocio{
+            background-color: v.$primario;
             order: -1;
-
+            @include m.iconoBg('../img/icono_negocio.svg');
             @include m.tablet {
                 order: unset;
+                margin-top: -5rem;
+                margin-bottom: -5rem;
+                border-radius: 2rem;
+                background-position: 50% 7rem;
+                padding-top: 21rem;
+                z-index: 1;
             }
+        }
+
+        &.pro{
+            @include m.iconoBg('../img/icono_pro.svg');
         }
     }
 }
