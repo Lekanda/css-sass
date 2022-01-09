@@ -11,6 +11,53 @@
     <link rel="stylesheet" href="build/css/app.css">
 </head>
 <body>
-    
+    <header class="header">
+        <div class="barra contenedor">
+            <div class="barra__logo">
+                <p class="barra__nombre">Viaje</p>
+            </div>
+
+            <nav class="barra__navegacion">
+                <a href="#">Lugares para hospedarte</a>
+                <a href="#">Experiencias</a>
+                <a href="#">Experiencias en linea</a>
+            </nav>
+
+            <nav class="barra__login">
+                <a href="#">Hazte Socio</a>
+            </nav>
+
+            <form class="formulario contenedor">
+                <div class="formulario__campo">
+                    <label for="ubicacion" class="formulario__label">Ubicacion</label>
+                    <input type="text" class="formulario__input" id="ubicacion" placeholder="¿A donde viajas?">
+                </div>
+
+                <div class="formulario__campo">
+                    <label for="llegada" class="formulario__label">Llegada</label>
+                    <input type="date" class="formulario__input" id="llegada">
+                </div>
+
+                <div class="formulario__campo">
+                    <label for="salida" class="formulario__label">Salida</label>
+                    <input type="date" class="formulario__input" id="salida">
+                </div>
+
+                <div class="formulario__campo">
+                    <label for="huespedes" class="formulario__label">Huespedes</label>
+                    <input type="number" class="formulario__input" id="huespedes" placeholder="¿Cuantos?">
+                </div>
+
+                <div class="formulario__campo">
+                    <input type="submit" class="formulario__submit" value="Buscar?">
+                </div>
+            </form>
+
+            <p class="header__busqueda contenedor">
+                <p class="header__busqueda-label">¿No sabes a donde ir?</p>
+                <a href="#" class="header__busqueda boton">Búsqueda Flexible</a>
+            </div>
+        </div>
+    </header>
 </body>
 </html>
