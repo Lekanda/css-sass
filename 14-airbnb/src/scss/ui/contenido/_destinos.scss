@@ -1,0 +1,33 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.destinos{
+    &__grid {
+        @include m.grid(1, 2rem);
+
+        @include m.tablet { 
+            @include m.grid(2, 2rem);
+        }
+
+        @include m.desktop { 
+            @include m.grid(4, 2rem);
+        }
+    }
+
+}
+
+.destino{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2rem;
+
+    &__imagen{
+        width: 14rem;
+    }
+
+    &__nombre,
+    &__distancia{
+        margin: 0;
+    }
+}
