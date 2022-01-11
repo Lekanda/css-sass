@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    background-image: linear-gradient(to right, transparentize(v.$primario, .1) 0%, transparentize(v.$primario, .1) 100%), url(../img/header_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 3rem 0;
+
+    &__barra{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        @include m.tablet {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    &__logo{
+        width: 25rem;
+    }
+
+
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+
+    @include m.tablet {
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 0;
+    }
+
+    &__link{
+        color: v.$blanco;
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+
+        @include m.tablet {
+            margin-bottom: 0;
+        }
+    }
+}
+
