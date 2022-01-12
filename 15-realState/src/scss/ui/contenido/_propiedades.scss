@@ -25,5 +25,16 @@
 
     &__imagen{
         aspect-ratio: 10/6;
+        background-size: cover;
     }
+
+
+    @for $i from 1 through 6 {
+        $imagen: '../img/propiedad_' + $i + '.jpg';
+        &:nth-child(#{$i}) &__imagen{
+            background-image: url($imagen);
+        }
+    }
+    
+    
 }
