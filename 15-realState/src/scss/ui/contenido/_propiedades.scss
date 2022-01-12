@@ -1,0 +1,13 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.propiedades{
+    margin-top: 5rem;
+    @include m.tablet {
+        margin-top: 10rem;
+    }
+
+    &__heading{
+        @include m.heading;
+    }
+}
