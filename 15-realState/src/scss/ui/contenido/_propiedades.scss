@@ -10,4 +10,20 @@
     &__heading{
         @include m.heading;
     }
+
+    &__grid{
+        @include m.grid(1,2rem);
+
+        @include m.tablet {
+            @include m.grid(3,2rem);
+        }
+    }
+}
+
+.propiedad{
+    background-color: v.$blanco;
+
+    &__imagen{
+        aspect-ratio: 10/6;
+    }
 }
