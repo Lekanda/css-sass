@@ -26,15 +26,46 @@
     &__imagen{
         aspect-ratio: 10/6;
         background-size: cover;
+
+        position: relative;
     }
 
 
     @for $i from 1 through 6 {
         $imagen: '../img/propiedad_' + $i + '.jpg';
         &:nth-child(#{$i}) &__imagen{
-            background-image: url($imagen);
+            background-image: linear-gradient(to bottom, transparentize(v.$negro, 1%) 0%, transparentize(v.$negro, .3%) 100%),url($imagen);
         }
     }
-    
+
+    &__nombre{
+        position: absolute;
+        left: 1rem;
+        bottom: 1rem;
+        color: v.$blanco;
+        font-size: 2.4rem;
+
+    }
+
+    &__contenido{
+        padding: 2rem;
+    }
+    &__texto{
+        margin-bottom: 0;
+    }
+    &__precio{
+        font-size: 3rem;
+        margin: 0;
+        color: #26109f;
+        font-weight: 700;
+    }
+
+    &__enlace{
+        @include m.boton(v.$primario, v.$blanco);
+
+        display: block;
+        text-transform: uppercase;
+    }
+
     
 }
