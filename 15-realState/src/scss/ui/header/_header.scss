@@ -4,8 +4,13 @@
 .header{
     background-image: linear-gradient(to right, transparentize(v.$primario, .1) 0%, transparentize(v.$primario, .1) 100%), url(../img/header_bg.jpg);
     background-size: cover;
-    background-position: center;
+    background-position: bottom center;
     padding: 3rem 0;
+    position: relative;
+
+    @include m.tablet {
+        padding: 3rem 0 20rem 0;
+    }
 
     &__barra{
         display: flex;
@@ -18,6 +23,46 @@
     }
     &__logo{
         width: 25rem;
+    }
+
+    &__contenido{
+
+        @include m.tablet {
+            margin-top: 10rem;
+            max-width: 50rem;
+        }
+
+    }
+    &__texto{
+        color: v.$blanco;
+        display: none;
+        @include m.tablet {
+            display:block;
+            text-align: left;
+        }
+    }
+    &__heading{
+        color: v.$blanco;
+        text-align: center;
+        @include m.tablet {
+            text-align: left;
+        }
+    }
+    &__imagen{
+        display: none;
+        @include m.tablet {
+            display:block;
+            position: absolute;
+            right: 0;
+            bottom: -5rem;
+            max-width: 35rem;
+
+            border-top-left-radius: 2rem;
+            border-bottom-left-radius: 5rem;
+        }
+        @include m.desktopXL{
+            max-width: 60rem;
+        }
     }
 
 
