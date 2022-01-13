@@ -1,0 +1,57 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.destacada{
+    margin-top: 5rem;
+    background-image: linear-gradient(to bottom, transparent 0%, transparent 50%, v.$primario 50%,v.$primario 100%), url(../img/destacada.jpg);
+    background-size: 100%,cover;
+    background-position: center, -50rem -30rem;
+    background-repeat: no-repeat;
+
+    @include m.tablet {
+        background-image: linear-gradient(to right, transparent 0%, transparent 50%, v.$primario 50%,v.$primario 100%), url(../img/destacada.jpg);
+        background-position: center, -50rem center;
+    }
+   
+
+    &__grid{
+        display: grid;
+        grid-template-rows: repeat(2,1fr);
+
+        @include m.tablet {
+            grid-template-rows: unset;
+            @include m.grid(2,2rem);
+        }
+    }
+
+    &__contenido{
+        padding: 5rem;
+        grid-row: 2/3;
+        @include m.tablet {
+            padding: 10rem 5rem;
+            grid-column: 2/3;
+        }
+    }
+
+    &__heading{
+        color: v.$blanco;
+        text-transform: uppercase;
+    }
+
+    &__texto{
+        color: v.$blanco;
+        font-size: 1.8rem;
+    }
+
+    &__precio{
+        color: v.$blanco;
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+    &__enlace{
+        @include m.boton(v.$blanco,v.$primario);
+        display: block;
+    }
+
+    
+}
