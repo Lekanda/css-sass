@@ -25,3 +25,39 @@
         @include m.heading(true);
     }
 }
+
+.testimonial{
+
+    &__imagen{
+        width: 20rem;
+        margin: 0 auto;
+    }
+
+    &__contenido{
+        background-color: v.$blanco;
+        margin-top: -10rem;
+        padding: 10rem 2rem 2rem 2rem;
+
+    }
+
+    &__nombre{
+        text-align: center;
+        font-weight: 700;
+        font-size: 2.4rem;
+    }
+
+    &__texto{
+        text-align: center;
+        &::before{
+            content: '';
+            background-image: url(../img/quote.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline-block;
+            width: 4rem;
+            height: 4rem;
+            margin-right: 1rem;
+
+        }
+    }
+}
