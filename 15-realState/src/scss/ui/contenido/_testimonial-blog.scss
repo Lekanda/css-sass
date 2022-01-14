@@ -1,0 +1,27 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.testimoniales-blog{
+    margin-top: 5rem;
+
+    @include m.desktop {
+        @include m.grid(3,4rem);
+    }
+
+
+    &__testimoniales{
+        @include m.desktop {
+            grid-column: 1/2;
+        }
+    }
+
+    &__blog{
+        @include m.desktop {
+            grid-column: 2/4;
+        }
+    }
+
+    &__heading{
+        @include m.heading(true);
+    }
+}
