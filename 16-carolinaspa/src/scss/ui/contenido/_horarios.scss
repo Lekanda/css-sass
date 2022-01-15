@@ -33,3 +33,26 @@
         text-align: center;
     }
 }
+
+.tabla{
+    width: 100%;
+    border: .5rem solid v.$secundario;
+    text-align: center;
+    border-collapse: collapse;
+    &__thead{
+        background-color: v.$secundario;
+
+    }
+    &__th{
+        padding: 2rem;
+    }
+    &__tr{
+        &:hover{
+            background-color: darken($color: v.$primario, $amount: 10%);
+        }
+    }
+    &__td{
+        padding: 1rem;
+        font-size: 2.2rem;
+    }
+}
