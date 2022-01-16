@@ -2,6 +2,7 @@
 
 .slider{
     overflow: hidden;
+    position: relative;
 
     &__slide{
         height: 100%;
@@ -10,4 +11,8 @@
         position: relative;
         transition-property: transform;
     }
+    &__imagen{
+        width: 100%;
+    }
 }
+
