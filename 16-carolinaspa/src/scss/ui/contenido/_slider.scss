@@ -15,4 +15,14 @@
         width: 100%;
     }
 }
-
+.swiper-button-next, 
+.swiper-button-prev {
+    color: #e1e1e1;
+}
+.swiper-pagination-bullet{
+    background-color: v.$blanco;
+    opacity: .5;
+}
+.swiper-pagination-bullet-active{
+    background-color: v.$primario;
+}
