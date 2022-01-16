@@ -1,0 +1,16 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.header{
+    padding: 2rem 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include m.tablet { 
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
