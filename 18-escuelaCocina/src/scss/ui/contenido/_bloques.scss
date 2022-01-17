@@ -1,3 +1,32 @@
 @use 'base/variables' as v;
 @use 'base/mixins' as m;
 
+.bloques{
+
+
+    &__grid{
+
+        @include m.tablet {
+            @include m.grid(2,0rem);
+            grid-auto-flow: dense;
+        }
+    }
+}
+
+.bloque{
+    height: 40rem;
+    background-color: v.$primario;
+    // border: 5px solid v.$blanco;
+
+    &:nth-child(2){
+        @include m.bgImage('../img/bloque_1.jpg');
+    }
+    &:nth-child(3){
+        @include m.tablet {
+            grid-column: 2/3;
+        }
+    }
+    &:nth-child(4){
+        @include m.bgImage('../img/bloque_2.jpg');
+    }
+}
