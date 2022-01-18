@@ -353,3 +353,16 @@ img {
     font-weight: 700;
     text-align: center;
 }
+
+
+.nosotros__grid{
+    display: grid;
+    gap: 4rem;
+    
+}
+@media(min-width: 768px) {
+    .nosotros__grid{
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+    }
+}
