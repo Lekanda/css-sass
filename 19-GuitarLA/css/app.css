@@ -19,3 +19,62 @@ body {
 img {
     max-width: 100%;
 }
+/*class$ : que termina con __contenedor el nombre de la clase */
+[class$="__contenedor"]{
+    max-width: 120rem;
+    margin: 0 auto;
+    width: 95%;
+}
+
+.header{
+    background-image: linear-gradient(to right, rgb(0 0 0 / .7),rgb(0 0 0 / .7)),url(../img/header.jpg);
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    padding: 5rem 0;
+}
+
+.header__guitarra{
+    display: none;
+}
+
+.header__barra{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px) {
+    .header__barra{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+.header__logo{
+    width: 30rem;
+}
+
+.navegacion{
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+@media(min-width: 768px) {
+    .navegacion{
+        flex-direction: row;
+        margin-top: 0;
+    }
+}
+.navegacion__enlace{
+    text-decoration: none;
+    color: var(--blanco);
+    text-transform: uppercase;
+    padding: .5rem;
+    font-size: 1.4;
+    font-weight: 700;
+    transition: color 300ms;
+}
+.navegacion__enlace:hover{
+    color: var(--primary);
+}
