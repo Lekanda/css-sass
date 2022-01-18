@@ -44,8 +44,33 @@ img {
         position: absolute;
         right: 0;
         bottom: 0;
+        /* opacity: 0; */
+
+        /* animation-name: mostrarImagen;
+        animation-duration: 1s;
+        animation-delay: 0s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: 1; */
+        animation: 1s ease-in-out 0s 1 mostrarImagen;
     }
 }
+@keyframes mostrarImagen{
+    0%{
+        opacity: 0;
+        transform: translateX(-20rem);
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
+
+
+
 
 .header__barra{
     display: flex;
@@ -124,4 +149,7 @@ img {
 .modelo__enlace:hover{
     background-color: var(--primary);
 }
+
+
+
 
