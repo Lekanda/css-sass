@@ -32,10 +32,19 @@ img {
     background-position: 50%;
     background-repeat: no-repeat;
     padding: 5rem 0;
+    position: relative;
 }
 
 .header__guitarra{
     display: none;
+}
+@media(min-width: 992px) {
+    .header__guitarra{
+        display: block;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
 
 .header__barra{
@@ -59,6 +68,8 @@ img {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    position: relative;
+    z-index: 1;
 }
 @media(min-width: 768px) {
     .navegacion{
@@ -78,3 +89,39 @@ img {
 .navegacion__enlace:hover{
     color: var(--primary);
 }
+.modelo{
+    color: var(--blanco);
+    margin-top: 5rem;
+    text-align: center;
+}
+@media(min-width: 768px) {
+    .modelo{
+        text-align: left;
+        width: 50%;
+    }
+}
+.modelo__nombre{
+    font-size: 8rem;
+}
+.modelo__precio{
+    font-size: 6rem;
+    color: var(--primary);
+    font-weight: 900;
+    line-height: 0;
+
+}
+.modelo__enlace{
+    margin-top: 2rem;
+    text-decoration: none;
+    padding: 1rem 5rem;
+    border: 2px solid var(--primary);
+    color: var(--blanco);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.4rem;
+    transition: background-color 300ms;
+}
+.modelo__enlace:hover{
+    background-color: var(--primary);
+}
+
