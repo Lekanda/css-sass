@@ -316,3 +316,40 @@ img {
     overflow: hidden;
     font-size: 1.6rem;
 }
+.footer {
+    margin-top: 5rem;
+    background-color: var(--negro);
+    padding: 5rem 0;
+}
+@media (min-width: 768px) { 
+    .footer__contenido {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px) { 
+    .footer__nav {
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+.footer__enlace {
+    font-size: 2.8rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-weight: 700;
+}
+.footer__enlace:hover {
+    color: var(--primary);
+}
+.footer__copyright {
+    font-size: 2.8rem;
+    color: var(--blanco);
+    font-weight: 700;
+    text-align: center;
+}
